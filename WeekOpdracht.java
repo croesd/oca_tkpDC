@@ -36,13 +36,10 @@ class YahtzeeSpel {
         System.out.println("Wat is je naam? \n");
         String naam = scanner.nextLine();
         System.out.println("Hallo " + naam + ", wanneer je klaar bent om te spelen, klik op Enter!");
-        String input = getInput();
+        getInput();
         boolean isEersteRonde = true;
 
         while (true) {
-            if (input.equals("q")) {
-                break;
-            } else {
                 if(!isEersteRonde) {
                     vasthouden();
                 }
@@ -60,8 +57,7 @@ class YahtzeeSpel {
                 speler.worpGeschiedenis.add(worp);
                 isEersteRonde = false;
 
-//                System.out.println("Huidige waarden: " + worp.toString());
-            }
+
         }
     }
 
