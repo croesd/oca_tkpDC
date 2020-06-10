@@ -91,6 +91,7 @@ class Spel {
     }
 
     void kaartUitdelen(Speler speler) {
+        System.out.println("=================================================================================");
         speler.toevoegenKaart(speelKaarten.get(0));
         speelKaarten.remove(0);
         System.out.println("Jouw kaarten zijn: " + speler.kaarten);
@@ -132,6 +133,7 @@ class Spel {
     }
 
     void eindTotalen() {
+        System.out.println("========================= EINDRESULTAAT ===============================");
         for (int i = 0; i < spelers.size(); i++) {
             System.out.println(spelers.get(i).naam + ": " + spelers.get(i).totalePunten + " punten");
         }
