@@ -119,7 +119,7 @@ class Spel {
                 if(speler.totalePunten > 21) {
                     continue;
                 } else {
-                    if(speler == null || speler.totalePunten > spelerGewonnen.totalePunten) {
+                    if(spelerGewonnen == null || speler.totalePunten > spelerGewonnen.totalePunten) {
                         spelerGewonnen = speler;
                     }
                 }
